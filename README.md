@@ -1,135 +1,70 @@
-# # 🎓 Academia Studenti
+# Getting Started with Create React App
 
-**Piattaforma di gestione dello studio per studenti italiani**
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 🌟 Funzionalità
+## Available Scripts
 
-### 🎯 Core Features
-- **Dashboard** con statistiche giornaliere e settimanali
-- **Focus Mode** con timer e frasi motivazionali IA (Claude Sonnet 4)
-- **Gestione Materie** con colori personalizzati e obiettivi
-- **Sistema Voti** con calcolo automatico della media
-- **Sistema Crediti** (5 crediti ogni 30 minuti di studio)
-- **Profilo Personale** con livelli e achievements
-- **Autenticazione** completa (JWT)
+In the project directory, you can run:
 
-### 🤖 Integrazione IA
-- Frasi motivazionali generate da **Claude Sonnet 4**
-- Personalizzate per ogni materia di studio
-- Completamente in italiano
+### `npm start`
 
-## 🛠️ Stack Tecnologico
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Backend
-- **FastAPI** (Python)
-- **MongoDB** database
-- **JWT** authentication
-- **Emergent Integrations** per IA
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Frontend  
-- **React 19**
-- **Tailwind CSS**
-- **Shadcn/UI** components
-- **Lucide React** icons
+### `npm test`
 
-## 📦 Installazione Locale
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Prerequisiti
-- Python 3.11+
-- Node.js 18+
-- MongoDB
+### `npm run build`
 
-### Backend Setup
-```bash
-cd backend
-pip install -r requirements.txt
-cp .env.example .env
-# Configura le variabili ambiente nel file .env
-uvicorn server:app --reload --host 0.0.0.0 --port 8001
-```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Frontend Setup
-```bash
-cd frontend
-yarn install
-cp .env.example .env
-# Configura REACT_APP_BACKEND_URL nel file .env
-yarn start
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## 🚀 Deploy in Produzione
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### 1. Backend (Railway/Render)
-- Carica su GitHub
-- Connetti a Railway/Render  
-- Aggiungi variabili ambiente
-- Deploy automatico
+### `npm run eject`
 
-### 2. Frontend (Vercel/Netlify)
-- Connetti repository GitHub
-- Configura build command: `yarn build`
-- Deploy automatico
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### 3. Database
-- MongoDB Atlas (cloud)
-- O incluso nel servizio backend
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## 🔐 Variabili Ambiente
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Backend (.env)
-```env
-MONGO_URL=mongodb://localhost:27017
-DB_NAME=academia_studenti  
-EMERGENT_LLM_KEY=sk-emergent-...
-CORS_ORIGINS=*
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Frontend (.env)
-```env
-REACT_APP_BACKEND_URL=http://localhost:8001
-```
+## Learn More
 
-## 📸 Screenshots
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Dashboard
-![Dashboard](docs/dashboard.png)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Focus Mode
-![Focus Mode](docs/focus-mode.png)
+### Code Splitting
 
-### Gestione Materie
-![Subjects](docs/subjects.png)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## 🧪 Testing
+### Analyzing the Bundle Size
 
-```bash
-# Backend tests
-python -m pytest backend_test.py
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-# Frontend tests  
-yarn test
-```
+### Making a Progressive Web App
 
-## 📄 Licenza
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-MIT License - Vedi [LICENSE](LICENSE) per dettagli.
+### Advanced Configuration
 
-## 🤝 Contributi
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-1. Fork del repository
-2. Crea un branch (`git checkout -b feature/amazing-feature`)  
-3. Commit (`git commit -m 'Add amazing feature'`)
-4. Push (`git push origin feature/amazing-feature`)
-5. Apri una Pull Request
+### Deployment
 
-## 📞 Supporto
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Per supporto tecnico o domande:
-- Apri un **Issue** su GitHub
-- Invia email a: support@academiastudenti.com
+### `npm run build` fails to minify
 
----
-
-**Fatto con ❤️ per gli studenti italiani** 🇮🇹
-
-*Organizza il tuo studio, raggiungi i tuoi obiettivi accademici!*
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
